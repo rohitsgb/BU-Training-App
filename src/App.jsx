@@ -13,8 +13,10 @@ import userflow from 'userflow.js'
 const App = () => {
 
   userflow.init('ct_uevqk6bpgvc7lc3pihhm5mpkoi')
-  userflow.identifyAnonymous({
-    website_lead: true
+  userflow.identify('Test_User_id', {
+    name: 'Test_user',
+    email: 'test@userflow.com',
+    signed_up_at: '2024-11-06T12:30:00Z'
   })
 
   return (
