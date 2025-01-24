@@ -1,6 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
 import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import "./assets/styles/index.css";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
