@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
 import "./assets/styles/index.css";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
@@ -11,6 +12,15 @@ import userflow from 'userflow.js'
 
 
 const App = () => {
+
+    useEffect(() => {
+    userflow.init("ct_uevqk6bpgvc7lc3pihhm5mpkoi");
+    userflow.identify("rudhrabharathywork@gmail.com", {
+      name: "Rudhra Bharathy",
+      email: "rudhrabharathywork@gmail.com",
+      signed_up_at: isoDateString
+    });
+  }, []);
   return (
     <>
       <Navbar />
