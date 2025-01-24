@@ -16,7 +16,8 @@ const App = () => {
     userflow.init("ct_uevqk6bpgvc7lc3pihhm5mpkoi");
     userflow.identify("rudhrabharathywork@gmail.com", {
       name: "Rudhra Bharathy",
-      email: "rudhrabharathywork@gmail.com"
+      email: "rudhrabharathywork@gmail.com",
+      device_type: window.innerWidth > 800 ? 'desktop' : 'mobile',
     });
   }, []);
   return (
