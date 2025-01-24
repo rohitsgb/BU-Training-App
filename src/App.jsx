@@ -16,8 +16,7 @@ const App = () => {
     userflow.init("ct_uevqk6bpgvc7lc3pihhm5mpkoi");
     userflow.identify("rudhrabharathywork@gmail.com", {
       name: "Rudhra Bharathy",
-      email: "rudhrabharathywork@gmail.com",
-      signed_up_at: isoDateString
+      email: "rudhrabharathywork@gmail.com"
     });
   }, []);
   return (
