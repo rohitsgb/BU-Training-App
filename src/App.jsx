@@ -12,14 +12,12 @@ import userflow from 'userflow.js'
 
 const App = () => {
 
-    useEffect(() => {
-    userflow.init("ct_uevqk6bpgvc7lc3pihhm5mpkoi");
-    userflow.identify("rudhrabharathywork@gmail.com", {
-      name: "Rudhra Bharathy",
-      email: "rudhrabharathywork@gmail.com",
-      device_type: window.innerWidth > 800 ? 'desktop' : 'mobile',
-    });
-  }, []);
+    userflow.init('ct_l346nnpn6nfsjigcy5nnpu6dty')
+    userflow.identify('QA_User_ID', {
+      name: 'Rohit_QA',
+      email: 'rohit.singh@userflow.com',
+      signed_up_at: '2025-05-09T12:30:00Z'
+    })
   return (
     <>
       <Navbar />
