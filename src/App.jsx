@@ -14,7 +14,7 @@ const App = () => {
 
     userflow.init('ct_zrgciwjrrnf3xmmsrr2ce5odea')
     userflow.identifyAnonymous({
-        website_lead: true
+      website_lead: true
     })
   return (
     <>
